@@ -25,9 +25,6 @@ def juntar_dados(pasta_dados):
 # Executar a função para juntar todos os dados
 dados_juntos = juntar_dados(pasta_dados)
 
-
-
-
 import pyodbc
 
 # Parâmetros de conexão com o SQL Server
@@ -63,11 +60,18 @@ conn.close()
 print("Dados inseridos com sucesso no SQL Server.")
 
 
+""" 4. Escrever quais pontos de dificuldade e quais os pontos a favor da técnica usada. 
+Indique soluções de mercado através de uma pesquisa, quais ferramentas facilitariam essa jornada? (1 ponto)"""
+
+#Resposta
+
+"""Por conta do volume de dados, a performance foi uma questão nesse desafio, puramente baseado em Python,  
+talvez com Pandas ou Spark teria tido uma performance melhor. 
+Também pode ser difícil manter e escalar a solução de manipulação de dados sem o uso de estruturas e ferramentas mais robustas.
+Considerando que nesse caso tinhamos 100Mi de linhas."""
 
 
-
-print(dados_juntos[:1])  # Imprime as primeiras 10 linhas dos dados
-
+#ALUNO: Leonardo da Rocha Mello
 
 
 
